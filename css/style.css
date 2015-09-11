@@ -1,3 +1,12 @@
+/* Clear fix
+ * Source: https://css-tricks.com/snippets/css/clear-fix/
+ */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media only screen and ( min-width: 40em ) {
 	.top-bar {
 		text-align: center;
@@ -36,7 +45,12 @@ h6 {
 }
 
 .hero-unit {
-	height: 50%;
+	height: 600px;
+	background: url(../img/building-vintage-bike-monument.jpg) no-repeat center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 .hero-unit h1, 
 .hero-unit h2, 
@@ -46,6 +60,7 @@ h6 {
 .hero-unit h6 {
 	margin-top: -0.5rem;
 	margin-bottom: 0;
+	color: white;
 }
 .hero-unit h1 {
 	font-weight: bold;
@@ -55,30 +70,171 @@ h6 {
 }
 .hero-unit i {
 	display: block;
-	margin: .5rem auto 0;
-	font-size: 1.5rem;
+	margin: 0.5rem auto 0;
+	font-size: 2rem;
+	color: white;
 }
 .button.large {
 	margin: 0;
-	padding: 3rem;
+	padding: 3.25rem;
 }
 .button.large a {
 	color: white;
 	font-size: 1.75rem;
 	font-weight: 100;
+	margin-top: 2rem;
 }
-/* Button Flipper */
+/* Buttons Card Flipper 
+ * Source: http://cssdeck.com/labs/rxcleo5w
+ */
+.flip-cards {
+	float: left;
+	width: 100%;
+	height: 100%;
+	padding-left: 1rem;
+}
+.flip-cards li {
+	float: left;
+	width: 33.3%;
+	height: 180px;
+	position: relative;
+	padding: 0;
+}
+.flip-cards li:hover {
+	cursor: pointer;
+}
+.flip-cards li:hover .card-front {
+	-webkit-transform: rotateY(180deg);
+	        -moz-transform: rotateY(180deg);
+	        -ms-transform: rotateY(180deg);
+	        -o-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+	        -webkit-transform: perspective(1000) rotateY(180deg);
+	        -moz-transform: perspective(1000) rotateY(180deg);
+	        -ms-transform: perspective(1000) rotateY(180deg);
+	        -o-transform: perspective(1000) rotateY(180deg);
+	        transform: perspective(1000) rotateY(180deg);
+}
+.flip-cards li:hover .card-back {
+	z-index: 950;
+	        -webkit-transform: rotateY(0deg);
+	        -moz-transform: rotateY(0deg);
+	        -ms-transform: rotateY(0deg);
+	        -o-transform: rotateY(0deg);
+	        transform: rotateY(0deg);
+	        -webkit-transform: perspective(1000) rotateY(0deg);
+	        -moz-transform: perspective(1000) rotateY(0deg);
+	        -ms-transform: perspective(1000) rotateY(0deg);
+	        -o-transform: perspective(1000) rotateY(0deg);
+	        transform: perspective(1000) rotateY(0deg);
+}
+.flip-cards .card-front,
+.flip-cards .card-back {
+	-webkit-backface-visibility: hidden;
+	    -moz-backface-visibility: hidden;
+	    -ms-backface-visibility: hidden;
+	    -o-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	    -webkit-transition: -webkit-transform 0.6s;
+	    -moz-transition: -moz-transform 0.6s;
+	    -o-transition: -o-transform 0.6s;
+	    transition: transform 0.6s;
+	    display: block;
+	    height: 100%;
+	    position: absolute;
+	    width: 100%;
+}
+.flip-cards .card-front {
+	-webkit-transform: perspective(1000) rotateY(0);
+	    -moz-transform: perspective(1000) rotateY(0);
+	    -ms-transform: perspective(1000) rotateY(0);
+	    -o-transform: perspective(1000) rotateY(0);
+	    transform: perspective(1000) rotateY(0);
+	    z-index: 900;
+}
+.flip-cards .card-back {
+	-webkit-transform: rotateY(-180deg);
+	    -moz-transform: rotateY(-180deg);
+	    -ms-transform: rotateY(-180deg);
+	    -o-transform: rotateY(-180deg);
+	    transform: rotateY(-180deg);
+	    z-index: 800;
+}
+/* Button Card Colors */
+.flip-cards .panel {
+	border: none;
+}
+.flip-cards .panel i,
+.flip-cards .panel p,
+.flip-cards .panel a,
+.flip-cards .panel small {
+	color: white;
+}
 
-.hub i {
+.flip-cards li:first-child > .button {
+	background-color: rgba(40, 57, 77, 0.8);
+}
+	.flip-cards li:first-child > .panel {
+		background-color: rgba(40, 57, 77, 1);
+	}
+	
+.flip-cards li:nth-child(2) > .button {
+	background-color: rgba(109, 193, 202, 0.8);
+}
+	.flip-cards li:nth-child(2) > .panel {
+		background-color: rgba(109, 193, 202, 1);
+	}
+	
+.flip-cards li:nth-child(3) > .button {
+	background-color: rgba(211, 81, 45, 0.8);
+}
+	.flip-cards li:nth-child(3) > .panel {
+		background-color: rgba(211, 81, 45, 1);
+	}
+	
+.flip-cards li:nth-child(4) > .button {
+	background-color: rgba(235, 167, 36, 0.8);
+}
+	.flip-cards li:nth-child(4) > .panel {
+		background-color: rgba(235, 167, 36, 1);
+	}
+	
+.flip-cards li:nth-child(5) > .button {
+	background-color: rgba(75, 135, 150, 0.8);
+}
+	.flip-cards li:nth-child(5) > .panel {
+		background-color: rgba(75, 135, 150, 1);
+	}
+	
+.flip-cards li:last-child > .button {
+	background-color: rgba(100, 66, 87, 0.8);
+}
+	.flip-cards li:last-child > .panel {
+		background-color: rgba(100, 66, 87, 1);
+		color: white;
+	}
+
+
+.panel a {
+	color: #4d4d4d;
+}	
+.panel a:hover {
+	text-decoration: underline;
+	color: rgba(75, 135, 150, 1);
+}
+.panel i {
 	font-size: 2rem;
 	display: block;
 	float: left;
 	width: 20%;
 	opacity: 0.5;
 }
-.hub a {
+.panel strong {
 	line-height: 2rem;
 	font-weight: bold;
+}
+.panel strong a {
+	color: #222;
 }
 .hub-info {
 	width: 80%;
@@ -89,7 +245,92 @@ h6 {
 	font-size: 0.9rem;
 	margin-bottom: 0.25rem;
 }
-.hub small {
+.panel small {
 	font-size: 0.7rem;
 	margin-left: 20%;
+	font-style: oblique;
+}
+.hub-info ul {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.hub-info li {
+	font-size: 0.9rem;
+}
+ul.follow {
+	list-style: none;
+	margin-top: 1rem;
+	text-align: center;
+}
+ul.follow li {
+	display: inline;
+	
+}
+ul.follow li i {
+	font-size: 1rem;
+	width: auto;
+	padding: 5px 7px;
+	margin-right: 5px;
+	background-color: silver;
+	border-radius: 5px;
+}
+ul.follow a,
+ul.follow a:hover {
+	color: white;
+}
+
+
+/* 3d follow icons */
+/* animation domination */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+}
+	/* complete the animation! */
+	.three-d:hover .three-d-box, 
+	.three-d:focus .three-d-box {
+		transform: translateZ(-25px) rotateY(90deg);
+	}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translateZ(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* 
+	put the "front" and "back" elements into place with CSS transforms, 
+	specifically translation and translatez
+*/
+.front {
+	transform: rotateY(0deg) translateZ(25px);
+}
+
+.back {
+	transform: rotateY(-90deg) translateZ(25px);
+	color: #ffe7c4;
+}
+
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: black;
+	padding: 15px 10px;
+	color: white;
+	pointer-events: none;
+	box-sizing: border-box;
+	
 }

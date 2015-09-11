@@ -37,42 +37,118 @@
 	</nav>
 	
 	
-    <div class="row hero-unit">
-      <div class="large-12 columns">
+    <div class="hero-unit">
+
+		<div class="row">
+		<div class="large-12 columns">
 		<hgroup>
 			<h1>Code. Design. Education.</h1>
 			<h3>Just keep learning. Make new opportunities.</h3>
 		</hgroup>
 	  
-		<ul class="small-block-grid-2">
-			<li class="large button alert flip-container" ontouchstart="this.classList.toggle('hover');">
-				<div class="flipper">
-					<div class="front">
-						<a href="http://">Code</a>
-						<i class="fa fa-code"></i>
-					</div>
-					<div class="back">
-						
-					</div>
+	  
+		<ul class="small-block-grid-3 flip-cards">
+			
+			<li ontouchstart="this.classList.toggle('hover');">	
+				<div class="large button card-front">
+					<a href="http://">Code</a>
+					<i class="fa fa-code"></i>
+				</div>
+					
+				<div class="panel card-back">
+		  			<i class="fa fa-code"></i>
+		  			<div class="hub-info">
+		                <a href="">JKLCode.com</a>
+		  				<p>Find coding gists, cheatsheets, plugins, themes, resources, and tutorials.</p>
+		  			</div>
+		  			<small class="clear">Updated weekly - TTH.</small>
 				</div>
 			</li>
-			<li class="large button success flip-container" ontouchstart="this.classList.toggle('hover');">
-				<a href="http://www.aaronsnowberger.com">Design</a>
-				<i class="fa fa-pencil-square-o"></i>
+			
+			<li ontouchstart="this.classList.toggle('hover');">
+				<div class="large button card-front">
+					<a href="http://www.aaronsnowberger.com">Design</a>
+					<i class="fa fa-pencil-square-o"></i>
+				</div>
+				
+	            <div class="panel card-back">
+				  	<i class="fa fa-pencil-square-o"></i>
+				  	<div class="hub-info">
+	              		<a href="">AaronSnowberger.com</a>
+				  		<p>A portfolio collection of designs from completion of my MFA in Media Design (2011).</p>
+				  	</div>
+				  	<small class="clear">Updated weekly on Saturdays.</small>
+	            </div>
 			</li>
-			<li class="large button flip-container" ontouchstart="this.classList.toggle('hover');">
-				<a href="">Education</a>
-				<i class="fa fa-paper-plane-o"></i>
+			
+			<li ontouchstart="this.classList.toggle('hover');">
+				<div class="large button card-front">
+					<a href="">Education</a>
+					<i class="fa fa-paper-plane-o"></i>
+				</div>
+					
+	            <div class="panel card-back">
+				  	<i class="fa fa-paper-plane-o"></i>
+				  	<div class="hub-info">
+	              	  	<a href="">Udemy.com</a>
+				  	  	<p>Join classes about Computers, Technology, Coding, Design, and Language Learning.</p>
+				  	</div>
+				  	<small class="clear">Updated weekly on Mondays.</small>
+	            </div>	
 			</li>
-			<li class="large button info flip-container" ontouchstart="this.classList.toggle('hover');">
-				<a href="">Life</a>
-				<i class="fa fa-map-o"></i>
+			
+			<li ontouchstart="this.classList.toggle('hover');">
+				<div class="large button card-front">
+					<a href="">Life</a>
+					<i class="fa fa-map-o"></i>
+				</div>
+				
+	            <div class="panel card-back">
+				  	<i class="fa fa-map-o"></i>
+				  	<div class="hub-info">
+	              	  	<a href="">KeysToAGoodLife.com</a>
+				  		<p>Find resources for business, etc.</p>
+				  	</div>
+				  	<small class="clear">Updated monthly.</small>
+	            </div>
 			</li>
+			
+			<li ontouchstart="this.classList.toggle('hover');">
+				<div class="large button card-front">
+					<a href="">Language</a>
+					<i class="fa fa-language"></i>
+				</div>
+				
+	            <div class="panel card-back">
+				  	<i class="fa fa-language"></i>
+				  	<div class="hub-info">
+	              	  	<a href="">KeyToKorean.com</a>
+				  	  	<p>Take your Korean from "foreign" to fluency with vocabulary lists and grammar guides.</p>
+				  	</div>
+				  	<small class="clear">Updated 3 times weekly - MWF.</small>
+	            </div>
+			</li>
+			
+			<li ontouchstart="this.classList.toggle('hover');">
+				<div class="large button card-front">
+					<a href="">Church</a>
+					<i class="fa fa-users"></i>
+				</div>
+				
+	            <div class="panel card-back">
+				  	<i class="fa fa-users"></i>
+				  	<div class="hub-info">
+	              	  	<a href="">AICFChurch.org</a>
+				  	  	<p>Podcasts from the church service I attend.</p>
+				  	</div>
+				  	<small class="clear">Updated monthly on the last Sunday.</small>
+	            </div>
+			</li>
+			
 		</ul>
-	  </div>
+	  	</div>
+  		</div>
     </div>
-	
-	<hr>
 
     <div class="row hub">
       <div class="large-12 columns">
@@ -80,68 +156,136 @@
         <!-- Grid Example -->
         <div class="row">
           <div class="large-4 medium-4 small-4 columns">
-		    <div class="panel">
+		    <div class="panel group">
 			  <i class="fa fa-code"></i>
 			  <div class="hub-info">
-              <a href="">JKLCode.com</a>
-			  <p>Find coding gists, cheatsheets, plugins, themes, resources, and tutorials.</p>
+              <strong><a href="">JKLCode.com</a></strong>
+			  <ul>
+				  <li><a href="#">Themes & Plugins</a></li>
+				  <li><a href="#">Coding Cheatsheets</a></li>
+				  <li><a href="#">Where to Learn Coding</a></li>
+			  </ul>
+			  <ul class="follow">
+				  <li><a href="#"><i class="fa fa-wordpress"></i></a></li>
+				  <li><a href="#"><i class="fa fa-github"></i></a></li>
+				  <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+				  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			  </ul>
 			  </div>
-			  <small class="clear">Updated weekly - TTH.</small>
 			</div>
           </div>
           <div class="large-4 medium-4 small-4 columns">
-            <div class="panel">
+            <div class="panel group">
 			  <i class="fa fa-pencil-square-o"></i>
 			  <div class="hub-info">
-              <a href="">AaronSnowberger.com</a>
-			  <p>A portfolio collection of designs from completion of my MFA in Media Design (2011).</p>
+              <strong><a href="">AaronSnowberger.com</a></strong>
+			  <ul>
+				  <li><a href="#">Design Portfolio</a></li>
+				  <li><a href="#">How to Design Stuff</a></li>
+				  <li><a href="#">Graphic Design Resources</a></li>
+			  </ul>
+			  <ul class="follow">
+				  <li><a href="#" class="three-d">
+					  <i class="fa fa-facebook"></i>
+					  <span class="three-d-box">
+					  	<span class="icon-front"><i class="fa fa-facebook"></i></span>
+					  	<span class="icon-front"><i class="fa fa-facebook"></i></span>
+					  </span>
+				  </a></li>
+				  <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+				  <li><a href="#"><i class="fa fa-behance"></i></a></li>
+				  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+			  </ul>
 			  </div>
-			  <small class="clear">Updated weekly on Saturdays.</small>
             </div>
           </div>
           <div class="large-4 medium-4 small-4 columns">
-            <div class="panel">
+            <div class="panel group">
 			  <i class="fa fa-paper-plane-o"></i>
 			  <div class="hub-info">
-              <a href="">Udemy.com</a>
-			  <p>Join classes about Computers, Technology, Coding, Design, and Language Learning.</p>
+              <strong><a href="">Udemy.com</a></strong>
+			  <ul>
+				  <li><a href="#">Full-length Classes</a></li>
+				  <li><a href="#">Tech Tutorials</a></li>
+				  <li><a href="#">What I'm Learning</a></li>
+			  </ul>
+			  <ul class="follow">
+				  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			  </ul>
 			  </div>
-			  <small class="clear">Updated weekly on Mondays.</small>
             </div>
           </div>
 		  <div class="large-4 medium-4 small-4 columns">
-            <div class="panel">
+            <div class="panel group">
 			  <i class="fa fa-language"></i>
 			  <div class="hub-info">
-              <a href="">KeyToKorean.com</a>
-			  <p>Take your Korean from "foreign" to fluency with vocabulary lists and grammar guides.</p>
+              <strong><a href="">KeyToKorean.com</a></strong>
+			  <ul>
+				  <li><a href="#">Motivation</a></li>
+				  <li><a href="#">Community</a></li>
+				  <li><a href="#">Resources</a></li>
+			  </ul>
+			  <ul class="follow">
+				  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				  <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+				  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				  <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+			  </ul>
 			  </div>
-			  <small class="clear">Updated 3 times weekly - MWF.</small>
             </div>
           </div>
           <div class="large-4 medium-4 small-4 columns">
-            <div class="panel">
+            <div class="panel group">
 			  <i class="fa fa-map-o"></i>
 			  <div class="hub-info">
-              <a href="">KeysToAGoodLife.com</a>
-			  <p>Find resources for business, etc.</p>
+              <strong><a href="">KeysToAGoodLife.com</a></strong>
+			  <ul>
+				  <li><a href="#">Life Management</a></li>
+				  <li><a href="#">Habit Forming</a></li>
+				  <li><a href="#">Good Reads</a></li>
+			  </ul>
+			  <ul class="follow">
+				  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			  </ul>
 			  </div>
-			  <small class="clear">Updated monthly.</small>
             </div>
           </div>
           <div class="large-4 medium-4 small-4 columns">
-            <div class="panel">
+            <div class="panel group">
 			  <i class="fa fa-users"></i>
 			  <div class="hub-info">
-              <a href="">AICFChurch.org</a>
-			  <p>Podcasts from the church service I attend.</p>
+              <strong><a href="">AICFChurch.org</a></strong>
+			  <ul>
+				  <li><a href="#">Sermon Podcasts</a></li>
+				  <li><a href="#">Church Info</a></li>
+				  <li><a href="#">Design Resources</a></li>
+			  </ul>
+			  <ul class="follow">
+				  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				  <li><a href="#"><i class="fa fa-music"></i></a></li>
+			  </ul>
 			  </div>
-			  <small class="clear">Updated monthly on the last Sunday.</small>
             </div>
           </div>
         </div>
         
         <hr />
+		
+		<h4>Life is a "Work in Progress"</h4>
+		<div class="row">
+			<div class="large-8 columns">
+				Some text goes here.
+			</div>
+			<div class="large-4 columns">
+				<img style="border-radius: 30px;" src="img/snowberger-family.jpg" />
+			</div>
+		</div>
+		
+		<hr>
                 
         <h5>We bet you&rsquo;ll need a form somewhere:</h5>
         <form>
