@@ -1,0 +1,95 @@
+@media only screen and ( min-width: 40em ) {
+	.top-bar {
+		text-align: center;
+	}
+	ul.center-buttons {
+		display: inline-block;
+	}
+	.logo {
+		left: 5px;
+		top: -2px;
+		position: absolute;
+	}
+}
+.logo {
+	max-width: 2rem;
+	margin-top: -3px;
+	margin-left: 5px;
+}
+.menu-icon {
+	padding-top: 1.2rem;
+}
+.top-bar.expanded {
+	background: #333333;
+}
+.logo {
+	margin-top: .5rem;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+.hero-unit {
+	height: 50%;
+}
+.hero-unit h1, 
+.hero-unit h2, 
+.hero-unit h3, 
+.hero-unit h4,
+.hero-unit h5, 
+.hero-unit h6 {
+	margin-top: -0.5rem;
+	margin-bottom: 0;
+}
+.hero-unit h1 {
+	font-weight: bold;
+}
+.hero-unit hgroup {
+	margin: 2.5rem 0;
+}
+.hero-unit i {
+	display: block;
+	margin: .5rem auto 0;
+	font-size: 1.5rem;
+}
+.button.large {
+	margin: 0;
+	padding: 3rem;
+}
+.button.large a {
+	color: white;
+	font-size: 1.75rem;
+	font-weight: 100;
+}
+/* Button Flipper */
+
+.hub i {
+	font-size: 2rem;
+	display: block;
+	float: left;
+	width: 20%;
+	opacity: 0.5;
+}
+.hub a {
+	line-height: 2rem;
+	font-weight: bold;
+}
+.hub-info {
+	width: 80%;
+	float: right;
+}
+.hub-info p {
+	margin-top: 0.5rem;
+	font-size: 0.9rem;
+	margin-bottom: 0.25rem;
+}
+.hub small {
+	font-size: 0.7rem;
+	margin-left: 20%;
+}
