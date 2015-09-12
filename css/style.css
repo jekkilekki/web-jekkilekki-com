@@ -40,12 +40,14 @@ h3,
 h4, 
 h5, 
 h6 {
-	margin-top: 3rem;
+	margin-top: 4rem;
 	margin-bottom: 2rem;
 }
-
+hr {
+	margin-top: 2rem;
+}
 .hero-unit {
-	height: 600px;
+	height: 620px;
 	background: url(../img/building-vintage-bike-monument.jpg) no-repeat center center;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -66,7 +68,7 @@ h6 {
 	font-weight: bold;
 }
 .hero-unit hgroup {
-	margin: 2.5rem 0;
+	margin: 3rem 0;
 }
 .hero-unit i {
 	display: block;
@@ -215,6 +217,9 @@ h6 {
 	}
 
 
+.panel {
+	border: none;
+}
 .panel a {
 	color: #4d4d4d;
 }	
@@ -333,4 +338,36 @@ ul.follow a:hover {
 	pointer-events: none;
 	box-sizing: border-box;
 	
+}
+
+
+img.profile {
+	box-shadow: 0px 0px 10px #333;
+	border-radius: 30px;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+
+.resp .button {
+	width: 100%;
+	border-radius: 15px;
+	padding: 25px 10px;
+	box-shadow: 0px 0px 5px silver;
+}
+.resp .button i {
+	display: block;
+	font-size: 2rem;
+}
+
+
+
+.footer {
+	width: 100%;
+	background-color: #333;
+	margin-top: 2rem;
+	color: white;
+}
+.footer h4 {
+	color: white;
+	font-weight: bold;
 }
