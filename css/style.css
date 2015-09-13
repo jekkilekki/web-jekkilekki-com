@@ -390,6 +390,19 @@ img.profile {
 }
 
 
+.tabs {
+	margin-bottom: 2rem !important;
+}
+.tab-title.active {
+	border: 1px solid silver;
+	border-bottom: none;
+}
+.tab-title a {
+	font-size: 0.8rem !important;
+	padding: 0.75rem 2rem !important;
+}
+
+
 .footer {
 	width: 100%;
 	background-color: #333;
