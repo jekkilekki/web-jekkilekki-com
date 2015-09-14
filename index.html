@@ -500,12 +500,18 @@
 			</div>
 			<div class="large-8 medium-8 columns">
 				<h4></h4>
-				<div class="callout panel">
+				<div class="callout panel leaders">
 					<ul class="no-bullet">
-						<li><a href="#">Tim Ferris</a></li>
+						<li>
+							<a href="#"><span data-tooltip aria-haspopup="true" class="has-tip" title="Tim Ferriss"><img src="img/icons/tim-ferriss-sprite.png" /></span></a>
+						</li>
 						<li><a href="#">Matt Mullenweg</a></li>
-						<li><a href="#">Michael Hyatt</a></li>
-						<li><a href="#">Dave Ramsey</a></li>
+						<li>
+							<a href="#"><span data-tooltip aria-haspopup="true" class="has-tip" title="Michael Hyatt"><img src="img/icons/michael-hyatt-sprite.png" /></span></a>
+						</li>
+						<li>
+							<a href="#"><span data-tooltip aria-haspopup="true" class="has-tip" title="Dave Ramsey"><img src="img/icons/dave-ramsey-sprite.png" /></span></a>
+						</li>
 						
 						<li><a href="#">Morten Rand-Hendriksen</a></li>
 						<li><a href="#">Tom McFarlin</a></li>
@@ -516,8 +522,12 @@
 						<li><a href="#">Hugh Jackman</a></li>
 						<li><a href="#">Sam Hammington</a></li>
 						
-						<li><a href="#">Mark Driscoll</a></li>
-						<li><a href="#">Timothy Keller</a></li>
+						<li>
+							<a href="#"><span data-tooltip aria-haspopup="true" class="has-tip" title="Mark Driscoll"><img src="img/icons/mark-driscoll-sprite.png" /></span></a>
+						</li>
+						<li>
+						<a href="#"><span data-tooltip aria-haspopup="true" class="has-tip" title="Tim Keller"><img src="img/icons/tim-keller-sprite.png" /></span></a>
+						</li>
 						<li><a href="#">Zig Ziglar</a></li>
 						<li><a href="#">Darren Hardy</a></li>
 						
@@ -686,10 +696,25 @@
 
 			
 		});
-
+		/*
+		 * Sources:
+		 * http://www.sitepoint.com/bootstrap-tabs-play-nice-with-masonry/
+		 * http://codepen.io/SitePoint/pen/mywEMR/ (CodePen for above)
+		 * https://github.com/desandro/masonry/issues/665 (setTimeout function ref)
+		 * http://stackoverflow.com/questions/16987782/how-to-trigger-reload-masonry-plugin-on-click (another setTimeout example)
+		 * https://css-tricks.com/forums/topic/masonry-and-tabs-conflict-issue/#post-208155 (Reply on CSS-Tricks)
+		 * http://codepen.io/jekkilekki/pen/YywQag (my CodePen)
+		 */
 		// Reinitialize masonry inside each panel after the relative tab link is clicked - 
-		$('.masonry-container').on('toggled', function(event, tab) {
-			$(document).foundation('tab', 'reflow');
+		$('.tab-title a').on('click', function() {
+			// do async to allow menu to open
+			setTimeout( function() {
+				//$(document).foundation('tab', 'reflow');
+				//$('.masonry-container').masonry('reload');
+				$('.masonry-container').masonry({
+					itemSelector: '.masonry-item'
+				}, 500);
+			});
 		});
 	</script>
 

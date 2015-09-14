@@ -389,6 +389,12 @@ img.profile {
 	color: silver;
 }
 
+.leaders li {
+	float: left;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+}
+
 
 .tabs {
 	margin-bottom: 2rem !important;
