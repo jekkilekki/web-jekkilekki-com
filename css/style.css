@@ -225,7 +225,8 @@ hr {
 	}
 
 
-.panel {
+.panel,
+.panel.callout {
 	border: none;
 }
 .panel a {
@@ -371,6 +372,11 @@ img.profile {
 	margin-bottom: 2rem;
 }
 
+.vision .secondary { /* buttons */
+	margin-bottom: 0.5rem;
+	margin-top: -0.5rem;
+}
+
 .resp .button {
 	width: 100%;
 	height: 100px;
@@ -426,6 +432,9 @@ img.profile {
 	margin-top: 2rem;
 	color: white;
 }
+.footer a {
+	color: white;
+}
 .footer h4 {
 	color: white;
 	font-weight: bold;
@@ -459,7 +468,7 @@ img.profile {
 	margin-top: 10px;
 }
 .footer nav {
-	margin-top: 3rem;
+	margin-top: 6rem;
 	padding-top: 0.5rem;
 	height: 60px;
 }
