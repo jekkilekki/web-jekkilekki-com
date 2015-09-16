@@ -26,6 +26,13 @@ hr {
 	margin-top: 2rem;
 	margin-bottom: 0;
 }
+a {
+	color: rgba(75, 135, 150, 1);;
+}
+a:hover {
+	text-decoration: underline;
+	color: rgba(75, 135, 150, 1);
+}
 .hero-unit {
 	height: 640px;
 	background: url(../img/building-vintage-bike-monument.jpg) no-repeat center center;
@@ -451,10 +458,11 @@ img.profile {
 }
 .footer nav {
 	margin-top: 6rem;
-	padding-top: 0.5rem;
+	padding-top: 0.75rem;
 	height: 60px;
 }
 .footer nav,
+.footer nav li,
 .footer nav a {
 	background: #222222 !important;
 	font-weight: normal;

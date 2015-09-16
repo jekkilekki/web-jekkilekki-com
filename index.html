@@ -26,9 +26,11 @@
 		<section class="top-bar-section">
 			<ul class="right">
 				<li class="divider"></li>
+				<li><a href="http://www.jklcode.com">?Code</a></li>
+				<li class="divider"></li>
 				<li><a href="http://www.aaronsnowberger.com">Design</a></li>
 				<li class="divider"></li>
-				<li><a href="http://www.jklcode.com">?Code</a></li>
+				<li><a href="#">?Education</a></li>
 				<li class="divider"></li>
 				<li><a href="#">?Life</a></li>
 				<li class="divider"></li>
@@ -327,7 +329,7 @@
 			<div class="large-8 medium-8 columns">
 				<h4>Life is a "Work in Progress"</h4>
 				<p class="lead">One of the hardest things in life is making sure all the pieces fit just right. And here I am, trying to fit them all together.</p>
-				<p>I'm a graphic designer and website developer from the middle of the Rocky Mountains in Wyoming. I currently teach English full-time at Jeonju University in Jeonju, South Korea as well as do a number of additional jobs (see below).</p>
+				<p>I'm a graphic designer and website developer from <a href="https://www.google.com/maps/place/Rock+Springs,+WY+82901,+USA/@41.6039525,-109.2378026,13z/data=!3m1!4b1!4m2!3m1!1s0x875a58e8f5c28b19:0x725fe8127303770">the middle of the Rocky Mountains in Wyoming.</a> I'm currently employed as a full-time Assistant Professor of English at <a href="http://www.jj.ac.kr">Jeonju University</a> in South Korea, and a part-time Computer Science Teacher at the <a href="http://www.gpa.ac.kr">Global Prodigy Academy high school</a> on campus.</p>
 				<p>I have a great deal of research interests, but find it difficult to cram everything in. The things I'm most interested in <strong>continuing to learn</strong> these days include:</p>
 				<ul class="no-bullet">
 					<li><a href="">Java</a></li>
@@ -373,10 +375,10 @@
 						<span class="button"><i class="fa fa-pencil-square-o"></i>Freelance</span></a>
 					</li>
 					<li>
-						<span class="button"><i class="fa fa-users"></i>?Family</span>
+						<span class="button"><i class="fa fa-users"></i>Family</span>
 					</li>
 					<li>
-						<span class="button"><i class="fa fa-bicycle"></i>?Exercise</span>
+						<span class="button"><i class="fa fa-bicycle"></i>Exercise</span>
 					</li>
 					<li>
 						<a href="https://profiles.wordpress.org/jekkilekki">
@@ -412,7 +414,7 @@
 						Wife in <a href="http://enter.chonbuk.ac.kr/Graduate/">grad school</a> + 2 kids in preschool
 					</li>
 					<li>
-						<span data-tooltip aria-haspopup="true" class="has-tip tip-left" title="5 hr/wk">?Exercise:</span> 
+						<span data-tooltip aria-haspopup="true" class="has-tip tip-left" title="5 hr/wk">Exercise:</span> 
 						Daily 16km round-trip commute by bike
 					</li>
 					<li>
@@ -649,10 +651,11 @@
 	    <nav class="top-bar">
 			<section>
 				<ul>
-					<li><a href="">&copy; 2015<span class="hide-for-small-only"> Aaron Snowberger</span></a></li>
+					<li>&copy; 2015<span class="hide-for-small-only"> Aaron Snowberger</span></li>
+					<li><a href="http://www.jklcode.com">?Code</a></li>
 					<li><a href="http://www.aaronsnowberger.com">Design</a></li>
-					<li><a href="http://www.jklcode.com">Code</a></li>
-					<li><a href="#">Life</a></li>
+					<li><a href="#">?Education</a></li>
+					<li><a href="#">?Life</a></li>
 				</ul>
 			</section>
 		</nav>
@@ -660,16 +663,14 @@
     
     <script src="js/vendor/jquery.js"></script>
 	<script src="js/vendor/jquery.rss.js"></script>
-	<script src="js/wookmark.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+	<script src="js/moment.min.js"></script>
 	<script src="js/vendor/masonry.pkgd.min.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script>
       $(document).foundation();
-    </script>
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-
-	<script>
+   
 		// Initialize Masonry inside Foundation 5.5 Tab component
 		$(window).load(function() {
 			$('.masonry-container').masonry({
@@ -698,9 +699,7 @@
 				}, 500);
 			});
 		});
-	</script>
 
-	<script type="text/javascript">
 		google.load("visualization", "1", {packages:["corechart"]});
 		google.setOnLoadCallback(drawChart);
 		function drawChart() {
@@ -740,27 +739,7 @@
 			window.onload = redraw();
 			window.onresize = redraw;
 		}
-		
-		// google.load("feeds", "1");
-		
-		/*function initialize() {
-			var feed = new superfeedr.Feed("http://keytokorean.com/feed/");
-			feed.load(function(result) {
-				if(!result.error) {
-					var container = document.getElementById("feed");
-					for(var i=0; i<result.feed.entries.length; i++) {
-						var entry = result.feed.entries[i];
-						var div = document.createElement("div");
-						div.appendChild(document.createTextNode(entry.title));
-						container.appendChild(div);
-					}
-				}
-			});
-		}
-		superfeedr.auth('Jekkilekki', '287fb77fb25fb07af4d0e899791dc47d')
-		superfeedr.setOnLoadCallback(initialize);*/
-	</script>
-	<script>
+
 		jQuery(function($) {
 			$("#feed").rss(
 				"http://keytokorean.com/feed/",
