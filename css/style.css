@@ -83,11 +83,15 @@ a:hover {
 /* Buttons Card Flipper 
  * Source: http://cssdeck.com/labs/rxcleo5w
  */
-.flip-cards {
+.flip-cards,
+.flip-icons {
 	float: left;
 	width: 100%;
 	height: 100%;
 	padding-left: 1rem;
+}
+.flip-icons {
+	padding-left: 0;
 }
 .flip-cards li {
 	float: left;
@@ -96,10 +100,19 @@ a:hover {
 	position: relative;
 	padding: 0;
 }
-.flip-cards li:hover {
+.flip-icons li {
+	float: left;
+	width: 35px;
+	height: 25px;
+	position: relative;
+	padding: 0;
+}
+.flip-cards li:hover,
+.flip-icons li:hover {
 	cursor: pointer;
 }
-.flip-cards li:hover .card-front {
+.flip-cards li:hover .card-front,
+.flip-icons li:hover .icon-front {
 	-webkit-transform: rotateY(180deg);
 	        -moz-transform: rotateY(180deg);
 	        -ms-transform: rotateY(180deg);
@@ -111,7 +124,8 @@ a:hover {
 	        -o-transform: perspective(1000) rotateY(180deg);
 	        transform: perspective(1000) rotateY(180deg);
 }
-.flip-cards li:hover .card-back {
+.flip-cards li:hover .card-back,
+.flip-cards li:hover .icon-back {
 	z-index: 950;
 	        -webkit-transform: rotateY(0deg);
 	        -moz-transform: rotateY(0deg);
@@ -125,7 +139,9 @@ a:hover {
 	        transform: perspective(1000) rotateY(0deg);
 }
 .flip-cards .card-front,
-.flip-cards .card-back {
+.flip-cards .card-back,
+.flip-icons .icon-front,
+.flip-icons .icon-back {
 	-webkit-backface-visibility: hidden;
 	    -moz-backface-visibility: hidden;
 	    -ms-backface-visibility: hidden;
@@ -140,7 +156,8 @@ a:hover {
 	    position: absolute;
 	    width: 100%;
 }
-.flip-cards .card-front {
+.flip-cards .card-front,
+.flip-icons .icon-front {
 	-webkit-transform: perspective(1000) rotateY(0);
 	    -moz-transform: perspective(1000) rotateY(0);
 	    -ms-transform: perspective(1000) rotateY(0);
@@ -148,7 +165,8 @@ a:hover {
 	    transform: perspective(1000) rotateY(0);
 	    z-index: 900;
 }
-.flip-cards .card-back {
+.flip-cards .card-back,
+.flip-icons .icon-back {
 	-webkit-transform: rotateY(-180deg);
 	    -moz-transform: rotateY(-180deg);
 	    -ms-transform: rotateY(-180deg);
@@ -259,8 +277,9 @@ a:hover {
 }
 ul.follow {
 	list-style: none;
-	margin-top: 1rem;
+	/*margin-top: 1rem;*/
 	text-align: center;
+	margin: 0.5rem 0 0;
 }
 ul.follow li {
 	display: inline;
@@ -268,7 +287,7 @@ ul.follow li {
 }
 ul.follow li i {
 	font-size: 1rem;
-	width: auto;
+	width: 30px;
 	padding: 5px 7px;
 	margin-right: 5px;
 	background-color: silver;
@@ -282,36 +301,54 @@ ul.follow a:hover {
 
 /* 3d follow icons */
 /* animation domination */
-.three-d {
+/*.three-d,
+.three-d-box {
 	perspective: 200px;
 	transition: all .07s linear;
 	position: relative;
 	cursor: pointer;
-}
+}*/
 	/* complete the animation! */
-	.three-d:hover .three-d-box, 
-	.three-d:focus .three-d-box {
+	/*.three-d:hover .three-d-box:hover, 
+	.three-d:focus .three-d-box:focus {
+		-webkit-transform: translateZ(-25px) rotateY(90deg);
 		transform: translateZ(-25px) rotateY(90deg);
-	}
+	}*/
 
-.three-d-box {
+/*.three-d-box {
 	transition: all .3s ease-out;
 	transform: translateZ(-25px);
 	transform-style: preserve-3d;
+	-webkit-transition: all .3s ease-out;
+	-webkit-transform: translateZ(-25px);
+	-webkit-transform-style: preserve-3d;
 	pointer-events: none;
-	position: absolute;
+	/*position: absolute;
 	top: 0;
 	left: 0;
 	display: block;
-	width: 100%;
-	height: 100%;
+	width: 20px;
+	height: 20px;
+}*/
+/*.icon-front {
+	-webkit-transform: translateZ(20px);
+	transform: translateZ(20px);
 }
+.icon-back {
+	-webkit-transform: rotateY(-90deg) translateZ(-20px);
+	transform: rotateY(-90deg) translateZ(-20px);
+}*/
+/* Rotate the icon 
+.three-d-box:hover {
+	-webkit-transform: rotateY(90deg);
+	transform: rotate(90deg);
+}*/
 
 /* 
 	put the "front" and "back" elements into place with CSS transforms, 
 	specifically translation and translatez
 */
-.front {
+/*.front {
 	transform: rotateY(0deg) translateZ(25px);
 }
 
@@ -333,7 +370,7 @@ ul.follow a:hover {
 	pointer-events: none;
 	box-sizing: border-box;
 	
-}
+}*/
 
 
 .life li {
